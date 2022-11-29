@@ -26,6 +26,8 @@ class AuthService {
     private(set) var isAuthorized: Bool = false
     weak var delegate: AuthServiceDelegate?
     
+    // MARK: - Init
+    
     init(api: TdApi) {
         self.api = api
     }
@@ -54,6 +56,26 @@ class AuthService {
                 self?.chekResult($0)
             }
     }
+    
+    func sendCode(_ code: String) {
+        try? self.api.checkAuthenticationCode(code: code) { [weak self] in
+            self?.chekResult($0)
+        }
+    }
+    
+    func sendPassword(_ password: String) {
+        try? self.api.checkAuthenticationPassword(password: password) { [weak self] in
+            self?.chekResult($0)
+        }
+    }
+    
+    public func logout() {
+        try? self.api.logOut() { [weak self] in
+            self?.chekResult($0)
+        }
+    }
+    
+    // MARK: - Private methods
     
     private func onUpdateAuthorizationState(_ state: AuthorizationState) throws {
             authorizationState = state

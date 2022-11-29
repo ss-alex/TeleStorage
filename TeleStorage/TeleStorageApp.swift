@@ -13,7 +13,7 @@ struct TeleStorageApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

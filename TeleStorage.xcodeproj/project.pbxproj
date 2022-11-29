@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A22BE3A29337DB1000C9FF2 /* TeleStorageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22BE3929337DB1000C9FF2 /* TeleStorageApp.swift */; };
-		8A22BE3C29337DB1000C9FF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22BE3B29337DB1000C9FF2 /* ContentView.swift */; };
+		8A22BE3C29337DB1000C9FF2 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22BE3B29337DB1000C9FF2 /* AuthView.swift */; };
 		8A22BE3E29337DB4000C9FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A22BE3D29337DB4000C9FF2 /* Assets.xcassets */; };
 		8A22BE4129337DB4000C9FF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A22BE4029337DB4000C9FF2 /* Preview Assets.xcassets */; };
 		8A22BE4329337DB4000C9FF2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22BE4229337DB4000C9FF2 /* Persistence.swift */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		8A22BE3629337DB1000C9FF2 /* TeleStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A22BE3929337DB1000C9FF2 /* TeleStorageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleStorageApp.swift; sourceTree = "<group>"; };
-		8A22BE3B29337DB1000C9FF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A22BE3B29337DB1000C9FF2 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		8A22BE3D29337DB4000C9FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A22BE4029337DB4000C9FF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A22BE4229337DB4000C9FF2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -63,7 +63,6 @@
 			children = (
 				8A22BE5129338DE0000C9FF2 /* Authentification */,
 				8A22BE3929337DB1000C9FF2 /* TeleStorageApp.swift */,
-				8A22BE3B29337DB1000C9FF2 /* ContentView.swift */,
 				8A22BE3D29337DB4000C9FF2 /* Assets.xcassets */,
 				8A22BE4229337DB4000C9FF2 /* Persistence.swift */,
 				8A22BE4429337DB4000C9FF2 /* TeleStorage.xcdatamodeld */,
@@ -83,6 +82,7 @@
 		8A22BE5129338DE0000C9FF2 /* Authentification */ = {
 			isa = PBXGroup;
 			children = (
+				8A22BE3B29337DB1000C9FF2 /* AuthView.swift */,
 				8A22BE4F29338A8C000C9FF2 /* AuthService.swift */,
 				8A22BE5229338E32000C9FF2 /* UserInfoModel.swift */,
 			);
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A22BE4329337DB4000C9FF2 /* Persistence.swift in Sources */,
-				8A22BE3C29337DB1000C9FF2 /* ContentView.swift in Sources */,
+				8A22BE3C29337DB1000C9FF2 /* AuthView.swift in Sources */,
 				8A22BE5029338A8C000C9FF2 /* AuthService.swift in Sources */,
 				8A22BE3A29337DB1000C9FF2 /* TeleStorageApp.swift in Sources */,
 				8A22BE5329338E32000C9FF2 /* UserInfoModel.swift in Sources */,

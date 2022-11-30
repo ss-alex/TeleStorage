@@ -29,6 +29,11 @@ struct AuthView: View {
             }
         }.padding(20)
     }
+    
+    private func sendPhone() {
+        guard !phone.isEmpty else { return }
+        
+    }
 
 }
 

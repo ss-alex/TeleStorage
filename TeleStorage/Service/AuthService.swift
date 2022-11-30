@@ -18,7 +18,7 @@ protocol AuthServiceDelegate: AnyObject {
     func onError(_ error: Swift.Error)
 }
 
-class AuthService {
+class AuthService: UpdateListener {
     
     private let api: TdApi
     private var authorizationState: AuthorizationState?

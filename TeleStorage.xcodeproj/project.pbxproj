@@ -16,6 +16,9 @@
 		8A22BE4E293387C6000C9FF2 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8A22BE4D293387C6000C9FF2 /* TDLibKit */; };
 		8A22BE5029338A8C000C9FF2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22BE4F29338A8C000C9FF2 /* AuthService.swift */; };
 		8A22BE5329338E32000C9FF2 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22BE5229338E32000C9FF2 /* UserInfoModel.swift */; };
+		8A853AE02937CDE00047E6CF /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A853ADF2937CDE00047E6CF /* ServiceLayer.swift */; };
+		8A853AE22937CFE20047E6CF /* TelegramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A853AE12937CFE20047E6CF /* TelegramService.swift */; };
+		8A853AE52937D74E0047E6CF /* StdOutLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A853AE42937D74E0047E6CF /* StdOutLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		8A22BE4529337DB4000C9FF2 /* TeleStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeleStorage.xcdatamodel; sourceTree = "<group>"; };
 		8A22BE4F29338A8C000C9FF2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8A22BE5229338E32000C9FF2 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		8A853ADF2937CDE00047E6CF /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		8A853AE12937CFE20047E6CF /* TelegramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramService.swift; sourceTree = "<group>"; };
+		8A853AE42937D74E0047E6CF /* StdOutLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StdOutLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 		8A22BE3829337DB1000C9FF2 /* TeleStorage */ = {
 			isa = PBXGroup;
 			children = (
+				8A853AE32937D7380047E6CF /* Helper */,
+				8A853ADE2937CD270047E6CF /* Service */,
+				8A853ADF2937CDE00047E6CF /* ServiceLayer.swift */,
 				8A22BE5129338DE0000C9FF2 /* Authentification */,
 				8A22BE3929337DB1000C9FF2 /* TeleStorageApp.swift */,
 				8A22BE3D29337DB4000C9FF2 /* Assets.xcassets */,
@@ -83,10 +92,26 @@
 			isa = PBXGroup;
 			children = (
 				8A22BE3B29337DB1000C9FF2 /* AuthView.swift */,
-				8A22BE4F29338A8C000C9FF2 /* AuthService.swift */,
 				8A22BE5229338E32000C9FF2 /* UserInfoModel.swift */,
 			);
 			path = Authentification;
+			sourceTree = "<group>";
+		};
+		8A853ADE2937CD270047E6CF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8A22BE4F29338A8C000C9FF2 /* AuthService.swift */,
+				8A853AE12937CFE20047E6CF /* TelegramService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8A853AE32937D7380047E6CF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8A853AE42937D74E0047E6CF /* StdOutLogger.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A853AE52937D74E0047E6CF /* StdOutLogger.swift in Sources */,
 				8A22BE4329337DB4000C9FF2 /* Persistence.swift in Sources */,
 				8A22BE3C29337DB1000C9FF2 /* AuthView.swift in Sources */,
+				8A853AE22937CFE20047E6CF /* TelegramService.swift in Sources */,
 				8A22BE5029338A8C000C9FF2 /* AuthService.swift in Sources */,
 				8A22BE3A29337DB1000C9FF2 /* TeleStorageApp.swift in Sources */,
 				8A22BE5329338E32000C9FF2 /* UserInfoModel.swift in Sources */,
 				8A22BE4629337DB4000C9FF2 /* TeleStorage.xcdatamodeld in Sources */,
+				8A853AE02937CDE00047E6CF /* ServiceLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

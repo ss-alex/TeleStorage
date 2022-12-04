@@ -8,7 +8,7 @@
 import Foundation
 import TDLibKit
 
-protocol AuthServiceDelegate: AnyObject {
+protocol AuthServiceDelegate/*: AnyObject*/ {
     func waitPhoneNumer()
     func waitCode()
     func waitPassword()
@@ -24,7 +24,9 @@ class AuthService: UpdateListener {
     private var authorizationState: AuthorizationState?
     
     private(set) var isAuthorized: Bool = false
-    weak var delegate: AuthServiceDelegate?
+    // Тут будет возникать retain cycle,
+    // нужно это будет зафиксить:
+    var delegate: AuthServiceDelegate?
     
     // MARK: - Init
     
